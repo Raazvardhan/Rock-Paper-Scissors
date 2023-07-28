@@ -9,9 +9,11 @@ This project is a simple implementation of the classic game "Rock-Paper-Scissors
 ![image](https://github.com/Raazvardhan/Rock-Paper-Scissors/assets/139915269/5e9f0627-3def-49d1-8cc7-a43445274248)
 ![image](https://github.com/Raazvardhan/Rock-Paper-Scissors/assets/139915269/faff4c92-d703-4a06-a790-f0134556fa7b)
 
-## Demo
 
-A live demo of the project can be found at [rock-paper-scissors-demo.com](https://raazvardhan.github.io/Rock-Paper-Scissors/).
+##Live Demo
+
+To see this website live, visit: [Rock-Paper-Scissors Game](https://raazvardhan.github.io/Rock-Paper-Scissors/).
+
 
 ## Technologies Used
 
