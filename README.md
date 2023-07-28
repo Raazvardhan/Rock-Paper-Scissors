@@ -12,7 +12,7 @@ This project is built using the following technologies:
 
 ## Demo
 
-A live demo of the project can be found at [rock-paper-scissors-demo.com](https://www.example.com).
+A live demo of the project can be found at [rock-paper-scissors-demo.com](https://raazvardhan.github.io/Rock-Paper-Scissors/).
 
 ## Screenshots
 
