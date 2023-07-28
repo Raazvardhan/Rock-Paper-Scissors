@@ -1,8 +1,19 @@
-
- *{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: b;
+  
+}
+
+@font-face {
+  font-family: b;
+  src: url(./Ferocity-Italic.otf);
+}
+
+@font-face {
+  font-family: a;
+  src: url(./Ferocity.otf);
 }
 
 section {
@@ -25,6 +36,7 @@ section {
   backdrop-filter: blur(10px); /* Apply additional blur for the glass effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari */
   border-bottom: 1px solid rgba(255, 255, 255, 0.4); /* Add a subtle border at the bottom */
+  font-family: a;
 }
 
 .score h2 {
@@ -51,19 +63,21 @@ section {
 
 .intro h1,
 h1 {
-  color: #f2efed; /* Bright orange text */
+  color: #ffffff; /* Bright orange text */
   font-size: 50px;
+  font-weight: 100;
+  font-family: b;
 }
 
 .intro button,
 .match button,
 .try {
-  width: 180px;
-  height: 60px;
+  width: 160px;
+  height: 50px;
   background: linear-gradient(to right, #ff5a00, #ffbf00); /* Gradient for button background */
   border: none;
   color: #fff; /* White text for buttons */
-  font-size: 24px;
+  font-size: 20px;
   border-radius: 30px;
   cursor: pointer;
   box-shadow: 0 5px 15px rgba(255, 90, 0, 0.4); /* Add box shadow for button */
@@ -125,26 +139,17 @@ h1 {
 
 /* Add animation for shaking hands */
 @keyframes shakeplayerhands {
-  /* ... (same as before) ... */
-}
-
-@keyframes shakecomputerhands {
-  /* ... (same as before) ... */
-}
-
-/* Corrected animation for shaking hands */
-@keyframes shakeplayerhands {
   0% {
     transform: translateY(0px) rotateY(180deg);
   }
   30% {
-    transform: translateY(-50px) rotateY(180deg);
+    transform: translateY(-20px) rotateY(180deg);
   }
   50% {
     transform: translateY(0px) rotateY(180deg);
   }
   70% {
-    transform: translateY(-50px) rotateY(180deg);
+    transform: translateY(-20px) rotateY(180deg);
   }
   100% {
     transform: translateY(0px) rotateY(180deg);
@@ -156,15 +161,47 @@ h1 {
     transform: translateY(0px);
   }
   30% {
-    transform: translateY(-50px);
+    transform: translateY(-20px);
   }
   50% {
     transform: translateY(0px);
   }
   70% {
-    transform: translateY(-50px);
+    transform: translateY(-20px);
   }
   100% {
     transform: translate(0px);
+  }
+}
+
+/* Responsive CSS for mobile */
+@media screen and (max-width: 768px) {
+  .score {
+    height: 10vh; /* Reduce the height for mobile */
+  }
+
+  .score h2 {
+    font-size: 24px; /* Reduce font size for mobile */
+  }
+
+  .score h3 {
+    font-size: 16px; /* Reduce font size for mobile */
+  }
+
+  .intro h1,
+  h1 {
+    font-size: 36px; /* Reduce font size for mobile */
+  }
+
+  .intro button,
+  .match button,
+  .try {
+    width: 140px; /* Reduce button width for mobile */
+    height: 40px; /* Reduce button height for mobile */
+    font-size: 18px; /* Reduce font size for mobile */
+  }
+
+  .hands img {
+    max-width: 1090px; /* Reduce the size of hands for mobile */
   }
 }
