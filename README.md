@@ -16,8 +16,9 @@ A live demo of the project can be found at [rock-paper-scissors-demo.com](https:
 
 ## Screenshots
 
-![image_2023-07-28_21-32-28](https://github.com/Raazvardhan/Kitchen-Library/assets/139915269/579f8dd9-0494-4ac4-9141-a8acccd35cfa)
-![image_2023-07-28_21-33-10](https://github.com/Raazvardhan/Kitchen-Library/assets/139915269/6250397d-99fa-4a6e-b9ca-8a054923600c)
+
+![image](https://github.com/Raazvardhan/Rock-Paper-Scissors/assets/139915269/5e9f0627-3def-49d1-8cc7-a43445274248)
+![image](https://github.com/Raazvardhan/Rock-Paper-Scissors/assets/139915269/faff4c92-d703-4a06-a790-f0134556fa7b)
 
 ## About
 
