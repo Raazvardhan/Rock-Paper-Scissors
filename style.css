@@ -1,0 +1,170 @@
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  background-image: url('https://img.freepik.com/free-photo/futuristic-background-with-colorful-glowing-abstract-neon-lights_181624-26329.jpg?w=1060&t=st=1690143718~exp=1690144318~hmac=2fd0c485e372707c2e6dab34f3219b8c71295e8b3c751ad9e921c47a40d27ad7');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(5px); /* Apply the blur effect */
+  -webkit-backdrop-filter: blur(5px); /* For Safari */
+  font-family: 'Arial', sans-serif;
+  color: #fff; /* Text color */
+}
+
+.score {
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  backdrop-filter: blur(10px); /* Apply additional blur for the glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4); /* Add a subtle border at the bottom */
+}
+
+.score h2 {
+  font-size: 30px;
+}
+
+.score h3 {
+  text-align: center;
+  padding-top: 7px;
+  font-size: 20px;
+}
+
+.intro,
+.match,
+.headingend {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  align-items: center;
+  justify-content: space-around;
+  transition: opacity 0.5s ease;
+}
+
+.intro h1,
+h1 {
+  color: #f2efed; /* Bright orange text */
+  font-size: 50px;
+}
+
+.intro button,
+.match button,
+.try {
+  width: 180px;
+  height: 60px;
+  background: linear-gradient(to right, #ff5a00, #ffbf00); /* Gradient for button background */
+  border: none;
+  color: #fff; /* White text for buttons */
+  font-size: 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 90, 0, 0.4); /* Add box shadow for button */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.intro button:hover,
+.match button:hover,
+.try:hover {
+  transform: scale(1.05); /* Add slight scale animation on hover */
+  box-shadow: 0 8px 20px rgba(255, 90, 0, 0.6); /* Adjust box shadow on hover */
+}
+
+.match {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease;
+  background: rgba(255, 255, 255, 0.2); /* Transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px); /* Apply the glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Add box shadow for glass effect */
+}
+
+.winner {
+  color: #ffffff; /* Bright orange text for winner message */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hands,
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.player-hand {
+  transform: rotateY(180deg);
+}
+
+.fadeout {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fadein {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.fadeint {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Add animation for shaking hands */
+@keyframes shakeplayerhands {
+  /* ... (same as before) ... */
+}
+
+@keyframes shakecomputerhands {
+  /* ... (same as before) ... */
+}
+
+/* Corrected animation for shaking hands */
+@keyframes shakeplayerhands {
+  0% {
+    transform: translateY(0px) rotateY(180deg);
+  }
+  30% {
+    transform: translateY(-50px) rotateY(180deg);
+  }
+  50% {
+    transform: translateY(0px) rotateY(180deg);
+  }
+  70% {
+    transform: translateY(-50px) rotateY(180deg);
+  }
+  100% {
+    transform: translateY(0px) rotateY(180deg);
+  }
+}
+
+@keyframes shakecomputerhands {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  70% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
